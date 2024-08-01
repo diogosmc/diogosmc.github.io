@@ -1,0 +1,141 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav ul li a .material-symbols-outlined,
+nav ul li a .fab {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+main {
+    padding: 2em;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+#title{
+    text-decoration: none;
+    color: black;
+}
+
+#titles-inicial{
+    color: black;
+    transition: color 0.3s ease;
+    
+}
+
+#titles-inicial:hover {
+    color: #ccc;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+#title_tabela{
+    text-align: center;
+}
+
+/* Estilos básicos para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+th:hover {
+    background-color: #333;
+    color: white;
+    transition: color 0.9s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    background-color: #333;
+    color: white;
+}
+
+#div_tabela {
+    width: 600px;
+    margin: 0 auto; /* Centraliza a div no contêiner pai */
+    text-align: center; /* Centraliza o texto dentro da div */
+    padding-bottom: 100px;
+}
+
+#footer {
+    height: 50px;
+    background-color: #333;
+    text-align: center;
+    color: #fff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Espaçamento interno */
+    font-family: 'Arial', sans-serif; /* Fonte */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    border-top: 2px solid #555; /* Borda superior */
+}
+
+#footer p {
+    margin: 0; /* Remove margens padrão */
+}
