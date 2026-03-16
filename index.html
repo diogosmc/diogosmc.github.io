@@ -1,105 +1,645 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Diogo Coelho — Desenvolvedor Python, Automação de Processos e IA. Rio de Janeiro, RJ." />
+    <title>Diogo Coelho · Dev & Automação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <header>
-        <a id="title" href="#">
-            <h1>Eco</h1>
-        </a>
-        
 
-        
-        
-        
-        <p style="color: #555555;">Viva uma Economia Sustentável</p>
-        <nav>
-            <ul>
-                <li><a id="titles-inicial" href="/index.html"><span class="material-symbols-outlined">home</span> Início</a></li>
-                <li><a id="titles-inicial" href="https://discord.gg/bJDXNyVvrt" target="_blank"><i class="fab fa-discord" style="font-size:20px;"></i> Discord</a></li>
-                <li><a id="titles-inicial" href="/sobre.html"><span class="material-symbols-outlined">psychology_alt</span> Sobre</a></li>
+    <!-- ══ NAV ════════════════════════════════════════════════════ -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">[</span>DC<span class="logo-bracket">]</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato" class="nav-cta">Contato</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2 style="text-align: center;">Bem-vindo ao Eco</h2>
-            <p style="text-align: center;">Transforme sua vida com dicas e relatos de economia e investimentos.</p>
-            <p>Participe do nosso <b>Discord</b> e compartilhe sua história! Queremos saber de onde você é, o que faz e como vive.<br><br> 
-                Nosso <b>objetivo</b> é trocar dicas valiosas sobre como <b>economizar dinheiro</b> e <b>melhorar de vida</b>. Inspire-se com os 
-            <b>relatos</b> de outras pessoas e compartilhe suas próprias experiências para <b>ajudar</b> nossa comunidade a crescer.<br><br> 
-                Junte-se a nós e aprenda com quem já está no caminho da mudança! 
+        </div>
+    </nav>
+
+    <!-- ══ HERO ═══════════════════════════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-inner reveal">
+            <p class="hero-tag">
+                <span class="tag-dot"></span>
+                Disponível para oportunidades · Rio de Janeiro, RJ
             </p>
-        </section>
-    </main>
+            <h1 class="hero-name">
+                Diogo<br><span class="hero-name-accent">Coelho</span>
+            </h1>
+            <p class="hero-typed-wrap">
+                <span class="hero-typed-prefix">$ </span>
+                <span id="typedText" class="hero-typed"></span>
+                <span class="cursor">|</span>
+            </p>
+            <p class="hero-sub">
+                Desenvolvedor focado em <strong>automação de processos</strong> e <strong>integração com IA</strong>.
+                Transformo fluxos manuais em sistemas inteligentes usando Python, N8N e LLMs.
+            </p>
+            <div class="hero-actions">
+                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+            </div>
+            <div class="hero-badges">
+                <!-- ✏️ EDITE: adicione/remova badges conforme suas tecnologias principais -->
+                <span class="badge">Python</span>
+                <span class="badge">N8N</span>
+                <span class="badge">Telegram Bot</span>
+                <span class="badge">Flask</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">LLM / IA</span>
+                <span class="badge">Git</span>
+            </div>
+        </div>
+    </section>
 
+    <!-- ══ SOBRE ═══════════════════════════════════════════════════ -->
+    <section id="sobre">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">01</span>
+                <h2 class="sec-title">Sobre</h2>
+                <div class="sec-line"></div>
+            </div>
+            <div class="sobre-grid">
+                <div class="sobre-text reveal">
+                    <!-- ✏️ EDITE: atualize seu texto de apresentação quando quiser -->
+                    <p>
+                        Tenho <strong>23 anos</strong>, moro no <strong>Penha, Zona Norte do Rio de Janeiro</strong>,
+                        e trabalho como desenvolvedor com foco em <strong>automação de processos e Python</strong>.
+                    </p>
+                    <p>
+                        Comecei minha trajetória na UFRJ (Nanotecnologia) e hoje curso
+                        <strong>Análise e Desenvolvimento de Sistemas na UNISUAM</strong>.
+                        Sou autodidata — a maior parte do que sei aprendi construindo soluções reais no dia a dia.
+                    </p>
+                    <p>
+                        Na <strong>Vent Rio</strong>, desenvolvi bots de automação com Telegram, sistemas desktop com
+                        Python e Qt,
+                        ferramentas de gestão integradas ao ERP e soluções com IA. Também fiz um freela entregue
+                        para empresa do setor de energia com Google Apps Script.
+                    </p>
+                    <p>
+                        Gosto de resolver problemas reais — não só escrever código.
+                    </p>
+                </div>
+                <div class="sobre-info reveal">
+                    <div class="info-card">
+                        <div class="info-item">
+                            <span class="info-label">Localização</span>
+                            <span class="info-value">Penha, Rio de Janeiro — RJ</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email</span>
+                            <a href="mailto:diogo.smc0@gmail.com" class="info-value info-link">diogo.smc0@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Telefone</span>
+                            <a href="tel:21968194560" class="info-value info-link">(21) 9 6819-4560</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">LinkedIn</span>
+                            <a href="https://linkedin.com/in/diogo-soares-030295281" target="_blank"
+                                class="info-value info-link">diogo-soares</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">GitHub</span>
+                            <a href="https://github.com/diogosmc" target="_blank"
+                                class="info-value info-link">diogosmc</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Inglês</span>
+                            <span class="info-value">Leitura técnica / Básico-Intermediário</span>
+                        </div>
+                    </div>
+                    <div class="sobre-stats">
+                        <!-- ✏️ EDITE: atualize os números conforme sua experiência crescer -->
+                        <div class="stat-box">
+                            <span class="stat-n">2+</span>
+                            <span class="stat-l">Anos exp.</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-n">5+</span>
+                            <span class="stat-l">Projetos entregues</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-n">5k+</span>
+                            <span class="stat-l">Registros saneados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ══ EXPERIÊNCIA ═════════════════════════════════════════════ -->
+    <section id="experiencia">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">02</span>
+                <h2 class="sec-title">Experiência</h2>
+                <div class="sec-line"></div>
+            </div>
 
-    <div id="div_tabela">
-        <h2 id="title_tabela">Cursos Gratuitos</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th id="renda_header" class="opcoes_tabela" onclick="toggleList('renda', this)">Renda</th>
-                    <th id="economia_header" class="opcoes_tabela" onclick="toggleList('economia', this)">Economia</th>
-                    <th id="compras_header" class="opcoes_tabela" onclick="toggleList('compras', this)">Compras</th>
-                    <th id="culinaria_header" class="opcoes_tabela" onclick="toggleList('culinaria', this)">Culinária</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="renda" class="hidden">
-                    <td colspan="4">
-                        <ul>
-                            <li><a href="https://www.youtube.com/@PrimoPobre" target="_blank">Primo Pobre</a></li>
-                            
+            <!-- ✏️ EDITE: adicione novos empregos copiando um bloco .exp-item -->
+            <div class="exp-list">
+
+                <div class="exp-item reveal">
+                    <div class="exp-meta">
+                        <span class="exp-period">Abr/2024 — Atualmente</span>
+                        <span class="exp-type">CLT</span>
+                    </div>
+                    <div class="exp-body">
+                        <h3 class="exp-title">Desenvolvedor / Técnico em TI</h3>
+                        <p class="exp-company">Vent Rio Comercio LTDA · Rio de Janeiro, RJ</p>
+                        <ul class="exp-list-items">
+                            <li>Desenvolvimento de automações com <strong>Python, N8N, Telegram e LLMs</strong>,
+                                eliminando processos manuais e reduzindo retrabalho operacional</li>
+                            <li>Bot Telegram + NAS: ao enviar uma foto com <code>/arquivo [nome]</code>, cria a pasta no
+                                servidor e organiza os arquivos automaticamente</li>
+                            <li>Bot de contagem de estoque via Telegram: valida código no ERP e registra no
+                                <strong>MySQL</strong> para reconciliação
+                            </li>
+                            <li>Sistema de Pesquisa de Satisfação (Python + Qt): preenche planilha e dispara e-mail ao
+                                cliente automaticamente</li>
+                            <li>Indexador de arquivos NAS (Python + Qt + MySQL): busca por tags, abre pasta com um
+                                clique — migrando para C#</li>
+                            <li>KanBan de chamados de TI com <strong>Flask + PostgreSQL</strong></li>
+                            <li>Saneamento de <strong>5.000+ registros de produtos</strong> garantindo integridade no
+                                ERP</li>
+                            <li>Suporte técnico: redes, NAS, DVR, ERP e manutenção de equipamentos</li>
                         </ul>
-                    </td>
-                </tr>
-                <tr id="economia" class="hidden">
-                    <td colspan="4">
-                        <ul>
-                            <li><a href="https://www.youtube.com/watch?v=AsU7zPTvwlo" target="_blank">Me Poupe</a></li>
-                            
+                        <div class="exp-tags">
+                            <span>Python</span><span>N8N</span><span>Telegram</span><span>MySQL</span>
+                            <span>Qt Designer</span><span>Flask</span><span>PostgreSQL</span><span>LLM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-item reveal">
+                    <div class="exp-meta">
+                        <span class="exp-period">2026</span>
+                        <span class="exp-type">Freelance</span>
+                    </div>
+                    <div class="exp-body">
+                        <h3 class="exp-title">Desenvolvedor Web — Freelance</h3>
+                        <p class="exp-company">Projeto para empresa do setor de energia · Rio de Janeiro, RJ</p>
+                        <ul class="exp-list-items">
+                            <li>Sistema web completo para gestão de funcionários com <strong>HTML, CSS e Google Apps
+                                    Script</strong></li>
+                            <li>Backend estruturado em <strong>Google Sheets + Drive</strong> — do zero ao deploy, em
+                                uso real</li>
                         </ul>
-                    </td>
-                </tr>
-                <tr id="compras" class="hidden">
-                    <td colspan="4">
-                        <ul>
-                            <li><a href="https://www.youtube.com/watch?v=a7587GKW-n8" target="_blank">Me Poupe</a></li>
-                            
-                        </ul>
-                    </td>
-                </tr>
-                <tr id="culinaria" class="hidden">
-                    <td colspan="4">
-                        <ul>
-                            <li><a href="https://www.youtube.com/watch?v=vI0OpgiSYYI" target="_blank">Leonardo Abrel</a></li>
-                            
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+                        <div class="exp-tags">
+                            <span>HTML</span><span>CSS</span><span>Google Apps Script</span><span>Google Sheets</span>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </section>
 
-    <div id="footer">
-        <p>"<em>Um verdadeiro guerreiro nunca luta apenas por si mesmo,<Br> mas sim por aqueles que não têm voz. 
-            Cada um de nós pode ser um herói na vida de alguém.</em>"<br>
-            - Samurai Jack
-        </p>
-    </div>
-    
+    <!-- ══ PROJETOS ════════════════════════════════════════════════ -->
+    <section id="projetos">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">03</span>
+                <h2 class="sec-title">Projetos</h2>
+                <div class="sec-line"></div>
+            </div>
 
+            <div class="proj-grid">
 
-    <script src="scripts.js"></script>
+                <!-- ✏️ EDITE: copie um .proj-card para adicionar novos projetos -->
+                <!-- Preencha o href do GitHub quando subir cada repo -->
+
+                <div class="proj-card reveal">
+                    <div class="proj-header">
+                        <span class="proj-icon">🤖</span>
+                        <div class="proj-links">
+                            <a href="https://github.com/diogosmc" target="_blank" class="proj-link">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <h3 class="proj-name">Bot Telegram + NAS</h3>
+                    <p class="proj-desc">
+                        Envia foto pelo Telegram com <code>/arquivo [pasta]</code>, o bot cria automaticamente a pasta
+                        no servidor NAS e organiza os arquivos — eliminando o processo manual de upload para toda a
+                        equipe.
+                    </p>
+                    <div class="proj-stack">
+                        <span>Python</span><span>Telegram API</span><span>NAS</span>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-header">
+                        <span class="proj-icon">📦</span>
+                        <div class="proj-links">
+                            <a href="https://github.com/diogosmc" target="_blank" class="proj-link">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <h3 class="proj-name">Bot de Contagem de Estoque</h3>
+                    <p class="proj-desc">
+                        Operador digita código e quantidade via Telegram. O bot valida no ERP se o código existe,
+                        confirma e registra a contagem no banco MySQL para posterior reconciliação no sistema.
+                    </p>
+                    <div class="proj-stack">
+                        <span>Python</span><span>Telegram API</span><span>MySQL</span><span>ERP</span>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-header">
+                        <span class="proj-icon">📋</span>
+                        <div class="proj-links">
+                            <a href="https://github.com/diogosmc/pesquisa_satisfacao" target="_blank"
+                                class="proj-link">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <h3 class="proj-name">Pesquisa de Satisfação Automatizada</h3>
+                    <p class="proj-desc">
+                        Sistema desktop onde o funcionário preenche os dados do atendimento.
+                        Ao finalizar, preenche automaticamente a planilha e dispara e-mail personalizado ao cliente.
+                    </p>
+                    <div class="proj-stack">
+                        <span>Python</span><span>Qt Designer</span><span>Excel</span><span>SMTP</span>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-header">
+                        <span class="proj-icon">🗂️</span>
+                        <div class="proj-links">
+                            <a href="https://github.com/diogosmc" target="_blank" class="proj-link">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <h3 class="proj-name">Indexador de Arquivos NAS</h3>
+                    <p class="proj-desc">
+                        Ferramenta desktop para anotar caminhos de pastas de rede com título, tags e descrição.
+                        Um clique abre a pasta diretamente. Migrando de Python/Qt para C# para uso por toda a equipe.
+                    </p>
+                    <div class="proj-stack">
+                        <span>Python</span><span>Qt Designer</span><span>MySQL</span><span>C# (WIP)</span>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-header">
+                        <span class="proj-icon">🗃️</span>
+                        <div class="proj-links">
+                            <a href="https://github.com/diogosmc" target="_blank" class="proj-link">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <h3 class="proj-name">KanBan de TI</h3>
+                    <p class="proj-desc">
+                        Sistema web de gestão de chamados internos de TI, com board Kanban para organizar
+                        tickets por status. Backend em Flask com banco PostgreSQL.
+                    </p>
+                    <div class="proj-stack">
+                        <span>Flask</span><span>Python</span><span>PostgreSQL</span><span>HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-header">
+                        <span class="proj-icon">🌐</span>
+                        <div class="proj-links">
+                            <span class="proj-link proj-link-private">Privado</span>
+                        </div>
+                    </div>
+                    <h3 class="proj-name">Sistema Web — Transpetro</h3>
+                    <p class="proj-desc">
+                        Sistema web completo para gestão de informações de funcionários.
+                        Backend em Google Sheets + Drive via Apps Script. Entregue e em uso real pela empresa.
+                    </p>
+                    <div class="proj-stack">
+                        <span>HTML</span><span>CSS</span><span>Apps Script</span><span>Google Sheets</span>
+                    </div>
+                </div>
+
+                <!-- ✏️ ADICIONE NOVOS PROJETOS AQUI — copie o bloco acima -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SKILLS ══════════════════════════════════════════════════ -->
+    <section id="skills">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">04</span>
+                <h2 class="sec-title">Habilidades</h2>
+                <div class="sec-line"></div>
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- ✏️ EDITE: atualize os níveis conforme evoluir -->
+                <div class="skill-group reveal">
+                    <h4 class="skill-group-title">Uso Diário</h4>
+                    <div class="skill-items">
+                        <div class="skill-row"><span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:88%"></div>
+                            </div><span class="skill-lvl">Avançado</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:70%"></div>
+                            </div><span class="skill-lvl">Bom</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">N8N</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:80%"></div>
+                            </div><span class="skill-lvl">Avançado</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">Telegram Bot API</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:78%"></div>
+                            </div><span class="skill-lvl">Avançado</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:65%"></div>
+                            </div><span class="skill-lvl">Intermediário</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">Qt Designer</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:72%"></div>
+                            </div><span class="skill-lvl">Bom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h4 class="skill-group-title">Backend & Banco</h4>
+                    <div class="skill-items">
+                        <div class="skill-row"><span class="skill-name">Flask</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:60%"></div>
+                            </div><span class="skill-lvl">Intermediário</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">FastAPI</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:45%"></div>
+                            </div><span class="skill-lvl">Básico</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:58%"></div>
+                            </div><span class="skill-lvl">Intermediário</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:62%"></div>
+                            </div><span class="skill-lvl">Intermediário</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">Google Apps Script</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:68%"></div>
+                            </div><span class="skill-lvl">Bom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h4 class="skill-group-title">Automação & IA</h4>
+                    <div class="skill-items">
+                        <div class="skill-row"><span class="skill-name">LLM Integration</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:70%"></div>
+                            </div><span class="skill-lvl">Bom</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">Agentes de IA</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:65%"></div>
+                            </div><span class="skill-lvl">Bom</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">RPA com Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:80%"></div>
+                            </div><span class="skill-lvl">Avançado</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">N8N Workflows</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:80%"></div>
+                            </div><span class="skill-lvl">Avançado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h4 class="skill-group-title">Aprendendo</h4>
+                    <div class="skill-items">
+                        <div class="skill-row"><span class="skill-name">C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:35%"></div>
+                            </div><span class="skill-lvl">Básico</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:40%"></div>
+                            </div><span class="skill-lvl">Básico</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">HTML / CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:55%"></div>
+                            </div><span class="skill-lvl">Intermediário</span>
+                        </div>
+                        <div class="skill-row"><span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:20%"></div>
+                            </div><span class="skill-lvl">Iniciando</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Infra tags -->
+            <div class="infra-tags reveal">
+                <span class="infra-label">Infraestrutura & TI:</span>
+                <span class="infra-tag">Redes</span>
+                <span class="infra-tag">NAS</span>
+                <span class="infra-tag">DVR</span>
+                <span class="infra-tag">ERP</span>
+                <span class="infra-tag">Suporte Técnico</span>
+                <span class="infra-tag">Kaizen</span>
+                <span class="infra-tag">SGQ</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FORMAÇÃO ════════════════════════════════════════════════ -->
+    <section id="formacao">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">05</span>
+                <h2 class="sec-title">Formação & Certificações</h2>
+                <div class="sec-line"></div>
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-col">
+                    <h4 class="form-col-title">Formação Acadêmica</h4>
+
+                    <!-- ✏️ EDITE: adicione novas formações conforme concluir -->
+                    <div class="form-item reveal">
+                        <div class="form-dot active"></div>
+                        <div class="form-content">
+                            <span class="form-period">Mar/2026 — Cursando</span>
+                            <h5 class="form-course">Análise e Desenvolvimento de Sistemas</h5>
+                            <p class="form-inst">UNISUAM · Rio de Janeiro, RJ</p>
+                        </div>
+                    </div>
+
+                    <div class="form-item reveal">
+                        <div class="form-dot"></div>
+                        <div class="form-content">
+                            <span class="form-period">2020 — Trancado</span>
+                            <h5 class="form-course">Nanotecnologia — Superior Incompleto</h5>
+                            <p class="form-inst">UFRJ — Universidade Federal do Rio de Janeiro</p>
+                        </div>
+                    </div>
+
+                    <div class="form-item reveal">
+                        <div class="form-dot"></div>
+                        <div class="form-content">
+                            <h5 class="form-course">Ensino Médio</h5>
+                            <p class="form-inst">Concluído</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-col">
+                    <h4 class="form-col-title">Cursos & Certificados</h4>
+
+                    <!-- ✏️ EDITE: adicione novos certificados aqui -->
+                    <div class="cert-card reveal">
+                        <span class="cert-emoji">🏅</span>
+                        <div>
+                            <p class="cert-name">Agentes de IA e Automações — Turma 1</p>
+                            <p class="cert-issuer">Firjan SENAI · 2025 <span class="cert-note">(Custeado pela
+                                    empresa)</span></p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal">
+                        <span class="cert-emoji">🏅</span>
+                        <div>
+                            <p class="cert-name">Ferramentas de Inteligência Artificial — Turma 6</p>
+                            <p class="cert-issuer">Firjan SENAI · 2025 <span class="cert-note">(Custeado pela
+                                    empresa)</span></p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal">
+                        <span class="cert-emoji">✅</span>
+                        <div>
+                            <p class="cert-name">Python · Git</p>
+                            <p class="cert-issuer">Cursos Completos</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal">
+                        <span class="cert-emoji">📜</span>
+                        <div>
+                            <p class="cert-name">SGQ · Kaizen · Não Conformidades · Atmosphera EX</p>
+                            <p class="cert-issuer">Vent Rio Comercio LTDA</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ CONTATO ═════════════════════════════════════════════════ -->
+    <section id="contato">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">06</span>
+                <h2 class="sec-title">Contato</h2>
+                <div class="sec-line"></div>
+            </div>
+            <div class="contato-wrap reveal">
+                <p class="contato-text">
+                    Aberto a novas oportunidades em <strong>Rio de Janeiro, RJ</strong>.<br>
+                    Pode mandar uma mensagem pelo LinkedIn ou direto no e-mail.
+                </p>
+                <div class="contato-links">
+                    <a href="mailto:diogo.smc0@gmail.com" class="contato-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        diogo.smc0@gmail.com
+                    </a>
+                    <a href="tel:21968194560" class="contato-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        (21) 9 6819-4560
+                    </a>
+                    <a href="https://linkedin.com/in/diogo-soares-030295281" target="_blank" class="contato-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/diogosmc" target="_blank" class="contato-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ═══════════════════════════════════════════════════ -->
+    <footer>
+        <div class="container">
+            <p class="footer-text">
+                Feito por <strong>Diogo Coelho</strong> · Penha, Rio de Janeiro · 2026
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
